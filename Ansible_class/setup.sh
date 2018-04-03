@@ -28,3 +28,7 @@ chmod +x /usr/local/bin/docker-compose
 docker-compose up -d
 
 docker-compose scale centos7=2 ubuntu=2 ansiblecontroller=1
+
+clear
+
+docker ps
