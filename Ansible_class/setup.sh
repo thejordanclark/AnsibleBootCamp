@@ -6,7 +6,7 @@ apt-get install \
     ca-certificates \
     curl \
     software-properties-common\
-    git -y
+    -y
 
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
@@ -17,7 +17,7 @@ add-apt-repository \
 
 apt-get update
 
-apt-get install docker-ce
+apt-get install docker-ce -y
 
 systemctl enable docker
 
@@ -27,4 +27,4 @@ chmod +x /usr/local/bin/docker-compose
 
 docker-compose up
 
-docker-comopse scale centos7=2 ubuntu=2 ansiblecontroller=1
+docker-compose scale centos7=2 ubuntu=2 ansiblecontroller=1
